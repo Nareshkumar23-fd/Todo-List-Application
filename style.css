@@ -1,0 +1,205 @@
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: black;
+    color: #fff;
+}
+
+.main_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main_content_2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-bottom: 1px solid #fff;
+    padding-bottom: 40px;
+    width: 80%;
+}
+
+#task_input {
+    padding: 10px 8px 10px 8px;
+    width: 20%;
+    border: none;
+    outline: none;
+}
+
+#task_input::placeholder {
+    color: black;
+    font-size: 14px;
+}
+
+#Add_btn {
+    border: none;
+    outline: none;
+    font-weight: 700;
+    background-color: green;
+    color: #fff;
+    padding: 10px 8px 10px 8px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+#Add_btn:hover {
+    background-color: darkgreen;
+}
+
+.heading_list {
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.item_list_update {
+    font-size: 25px;
+    list-style-type: circle;
+    text-transform: capitalize;
+}
+
+.edit_btn {
+    border: none;
+    outline: none;
+    font-weight: 700;
+    background-color: cornflowerblue;
+    color: #fff;
+    padding: 10px 8px 10px 8px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.del_btn {
+    border: none;
+    outline: none;
+    font-weight: 700;
+    background-color: crimson;
+    color: #fff;
+    padding: 10px 8px 10px 8px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+#task_list li {
+    font-size: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+
+}
+
+.Button_wrapper {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+}
+
+.LISTED_LIST {
+    text-align: center;
+}
+
+#msg {
+    font-size: 55px;
+}
+
+#msg::first-letter {
+    font-size: 85px;
+    color: cornflowerblue;
+}
+
+
+
+
+
+
+@media (min-width: 1399px) and (max-width: 2560px) {
+    .Heading_app {
+        font-size: 70px;
+        text-align: center;
+    }
+
+    #task_input {
+        width: 60%;
+        padding: 20px;
+        font-size: 20px;
+    }
+
+    #Add_btn {
+        padding: 20px;
+        font-size: 20px;
+
+    }
+
+    .edit_btn {
+        padding: 20px;
+        font-size: 20px;
+    }
+
+    .del_btn {
+        padding: 20px;
+        font-size: 20px;
+    }
+
+
+    #task_input::placeholder {
+        color: black;
+        font-size: 20px;
+    }
+
+    .heading_list {
+        font-size: 35px;
+    }
+
+    #msg {
+        font-size: 60px;
+    }
+
+    #msg::first-letter {
+        font-size: 85px;
+        color: cornflowerblue;
+    }
+
+    #task_list li{
+        font-size: 35px;
+    }
+}
+
+@media (min-width: 375px) and (max-width : 574px) {
+    .Heading_app {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .main_content_2 {
+        flex-direction: row;
+    }
+
+    #task_input {
+        width: 60%;
+    }
+    #msg{
+        font-size: 25px;
+    }
+}
+
+@media (min-width: 320px) and (max-width : 374px) {
+    .Heading_app {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .main_content_2 {
+        flex-direction: row;
+    }
+
+    #task_input {
+        width: 50%;
+
+    }
+    #msg{
+        font-size: 20px;
+    }
+}
